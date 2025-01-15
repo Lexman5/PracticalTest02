@@ -6,28 +6,44 @@
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- Input pentru prefix -->
     <EditText
-        android:id="@+id/inputPrefix"
+        android:id="@+id/inputKey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Introdu prefixul"
-        android:inputType="text" />
+        android:hint="Introdu cheia"
+        android:minHeight="48dp"
+        android:padding="8dp" />
 
-    <!-- Buton pentru declanșarea funcționalității -->
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introdu valoarea"
+        android:minHeight="48dp"
+        android:padding="8dp" />
+
     <Button
-        android:id="@+id/searchButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Caută rezultate" />
-
-    <!-- TextView pentru afișarea rezultatelor -->
-    <TextView
-        android:id="@+id/resultsTextView"
+        android:id="@+id/fetchButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:text="Caută" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adaugă" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Șterge" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Rezultatele vor apărea aici"
-        android:textSize="16sp" />
+        android:paddingTop="16dp" />
 </LinearLayout>
